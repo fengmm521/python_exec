@@ -1,1 +1,1 @@
-#!/usr/bin/env python# -*- coding: utf-8 -*-import threading  import time  def pyctest():    print('pyctest....')    print(__name__)def main():    pyctest()if __name__ == '__main__':    main()
+#!/usr/bin/env python# -*- coding: utf-8 -*-import threading  import time  xxx = 'aaa'def pyctest():    print('pyctest....')def main():    pyctest()if __name__ == '__main__':    main()
