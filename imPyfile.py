@@ -6,7 +6,7 @@ import types
 # import pyctest
 #http://python3-cookbook.readthedocs.io/zh_CN/latest/c10/p11_load_modules_from_remote_machine_by_hooks.html
 
-def load(fname = 'pyctest'):
+def loadModeFromFile(fname = 'pyctest'):
     fpth = fname + '.py'
     f = open(fpth,'r')
     pycode = f.read()
@@ -27,7 +27,7 @@ def main():
     # print sys.modules['pyctest'].__path__
     # print sys.modules['pyctest'].__loader__
 
-    m = load()
+    m = loadModeFromFile()
     print(m.pyctest())
     print(m.xxx)
 
